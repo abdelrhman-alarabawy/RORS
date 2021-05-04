@@ -209,7 +209,7 @@ public class RORS_customer_signup extends javax.swing.JFrame {
             pst.setString(3, phone);
             pst.setString(4, email);
             pst.setString(5, password);
-            
+
             if (pst.executeUpdate() > 0) {
                 JOptionPane.showMessageDialog(null, "Done");
 
@@ -217,11 +217,20 @@ public class RORS_customer_signup extends javax.swing.JFrame {
                 login.setVisible(true);
                 this.setVisible(false);
             } else {
+                sign_up_name.setText("");
+                sign_up_email.setText("");
+                sign_up_phone.setText("");
+                sign_up_password.setText("");
+
                 JOptionPane.showMessageDialog(null, "Failed to Add user");
             }
 
         } catch (Exception ex) {
-         JOptionPane.showMessageDialog(null, "error occured");
+            JOptionPane.showMessageDialog(null, "error occured");
+            sign_up_name.setText("");
+            sign_up_email.setText("");
+            sign_up_phone.setText("");
+            sign_up_password.setText("");
 
         }
 
