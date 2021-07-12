@@ -1,1 +1,487 @@
-test the Somalian guys!
+Signup: 
+
+1-Username (alphabetic and numeric). 
+
+2-Phone Number (numeric). 
+
+3-Password (alphabetic and numeric). 
+
+4-E-mail (alphabetic and numeric). 
+
+Derived Equivalence Classes: 
+
+Username is alphabetic and numeric(valid). 
+
+Username is not alphabetic(invalid). 
+
+Username is less than 2 characters in length(invalid). 
+
+Username is greater than 10 characters in length(invalid). 
+
+Phone Number is numeric (valid). 
+
+Phone Number is not numeric (invalid). 
+
+Phone Number is equal to 11 number in length (valid). 
+
+Phone Number is not equal to 11 number in length (invalid). 
+
+Phone Number is repeated (invalid). 
+
+Password is repeated (invalid). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Password contains uppercase, lowercase alphabetics, and numbers (valid). 
+
+E-mail contains ‘@’ at most once(valid). 
+
+ E-mail contains ‘.com’ at most once(valid). 
+
+E-mail does not contain ‘@’,’.com’ (invalid). 
+
+E-mail contains at least 8 characters before     ‘@’(valid). 
+
+Empty E-mail (invalid). 
+
+Empty Username (invalid). 
+
+Empty Password (invalid). 
+
+Empty Phone Number (invalid). 
+
+E-mail does not contain at least 8 characters before   ‘@’(invalid). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Black Box Cases: 
+
+Test No. 
+
+Data 
+
+Expected 
+
+Classes Covered 
+
+1 
+
+(uname)Ahmed, (uname)Asd22 
+
+T 
+
+1 
+
+2 
+
+(uname)a 
+
+F 
+
+2,3 
+
+3 
+
+01022332254 
+
+T 
+
+5,7 
+
+4 
+
+0123444a(Pno) 
+
+F 
+
+6,9 
+
+5 
+
+‘  ’ 
+
+F 
+
+16,17,18,19 
+
+6 
+
+Oppsd123(pass) 
+
+T 
+
+11 
+
+7 
+
+Aeradhan@gmail.com 
+
+T 
+
+12.13,15 
+
+8 
+
+Aerad.gmail.lll 
+
+(E-mail) 
+
+F 
+
+14 
+
+9 
+
+(uname) Dremerlanded 
+
+F 
+
+4 
+
+10 
+
+Asd@gamil.com 
+
+F 
+
+20 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Login: 
+
+1-Phone Number (numeric). 
+
+2-Password (alphabetic and numeric). 
+
+Derived Equivalence Classes: 
+
+Phone Number is numeric (valid). 
+
+Phone Number is not numeric (invalid). 
+
+Phone Number is equal to 11 number in length (valid). 
+
+Phone Number is not equal to 11 number in length (invalid). 
+
+Phone Number is repeated (invalid). 
+
+Password is repeated (invalid). 
+
+Password contains uppercase, lowercase alphabetics, and numbers (valid). 
+
+Password is less than 6 characters in length(invalid). 
+
+Empty Username (invalid). 
+
+Empty Password (invalid). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Black Box Cases: 
+
+Test No. 
+
+Data 
+
+Expected 
+
+Classes Covered 
+
+1 
+
+01033458932 
+
+(Pno), Asdsadf22 
+
+(pass) 
+
+T 
+
+21,27 
+
+2 
+
+Sadsad21(Pno), 
+
+Ggeh(Pass) 
+
+F 
+
+23,24,28 
+
+3 
+
+‘  ’,Aolsjf99fj(pass) 
+
+F 
+
+27,29 
+
+4 
+
+01033458932 
+
+(Pno) 
+
+, ‘  ’(pass) 
+
+F 
+
+21,28,30 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Guest: 
+
+1-Name (alphabetic). 
+
+2-Phone Number(numeric). 
+
+Derived Equivalence Classes: 
+
+Name is alphabetic (valid). 
+
+Name is not alphabetic(invalid). 
+
+Name starts with number(invalid). 
+
+Name is less than 2 characters in length(invalid). 
+
+Name is greater than 10 characters in length(invalid). 
+
+Empty Name (invalid). 
+
+Phone Number is numeric (valid). 
+
+Phone Number is not numeric (invalid). 
+
+Phone Number is equal to 11 number in length (valid). 
+
+Phone Number is not equal to 11 number in length (invalid). 
+
+Phone Number is repeated (invalid). 
+
+Phone Number is empty (invalid). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Black Box Cases: 
+
+Test No. 
+
+Data 
+
+Expected 
+
+Classes Covered 
+
+1 
+
+Ahmed, 01033448621 
+
+T 
+
+31,37 
+
+2 
+
+3a, 012321a 
+
+F 
+
+32,33,34,38,40 
+
+3 
+
+‘  ’,Aolsjf99fj 
+
+F 
+
+36,38,40 
+
+4 
+
+Oppsd, ‘  ’ 
+
+F 
+
+31,42 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Owner Login: 
+
+1-Username (alphabetic). 
+
+2-Password (alphabetic and numeric). 
+
+Derived Equivalence Classes: 
+
+Username is alphabetic (valid). 
+
+Username is not alphabetic(invalid). 
+
+Username is less than 2 characters in length(invalid). 
+
+Username is greater than 10 characters in length(invalid). 
+
+Empty Username (invalid). 
+
+Password is repeated (invalid). 
+
+Password contains uppercase, lowercase alphabetics, and numbers (valid). 
+
+Password is less than 6 characters in length(invalid). 
+
+Empty Password (invalid). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Black Box Cases: 
+
+Test No. 
+
+Data 
+
+Expected 
+
+Classes Covered 
+
+1 
+
+Ahmed(Uname),Asdsadf22(pass) 
+
+T 
+
+43,50 
+
+2 
+
+3a(Uname), sss(pass) 
+
+F 
+
+44,45,48 
+
+3 
+
+‘  ’(Uname), 
+
+Aolsjf99fj(pass) 
+
+F 
+
+47 
+
+4 
+
+Oppsd(Uname), ‘  ’(pass) 
+
+F 
+
+51 
+
+ 
+
+ 
+
+ 
+
+ 
