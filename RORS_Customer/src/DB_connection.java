@@ -19,7 +19,7 @@ public class DB_connection {
         Connection  con = null;
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/RORS", "root", "Abdelrhman.Yasser1010");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/RORS", "root", "password");
         } catch (Exception ex) {
             Logger.getLogger(DB_connection.class.getName()).log(Level.SEVERE, null, ex);
         }
